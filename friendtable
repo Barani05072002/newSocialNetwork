@@ -7,3 +7,13 @@ friendaddress varchar(30) not null
 bestfriend tinyint,
 user int references user(userid)
 )
+
+  CREATE TABLE user(
+  userid int primary key auto_increment,
+  username varchar(30) not null,
+  usermail varchar(30) not null,
+  usermobile int not null unique,
+  userdob date not null,
+  useraddress varchar(50) not null,
+  password varchar(20) not null
+  )
