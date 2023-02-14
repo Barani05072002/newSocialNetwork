@@ -1,16 +1,13 @@
 //shared post
 //shared videos
-class Share
+interface Share
 {
-	private int shareID;	//user id
-	private String shareName;	//user name
-	private String description;
-	private String shareType;	//video,image
-	private int shareTypeId;
-
-public void addShares()  //add photo,video,textmessage
-public void editShares()	
-public void deleteShare()
-public void searchShare()
-public void send()
+public void addShare() ; 
+public void editShare();
+public void deleteShare();
+public void searchShare();
+public void sendShare();
+public void receiveShare();
+public void setReply(String s);
+public String getReply();
 }
