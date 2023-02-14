@@ -1,0 +1,8 @@
+CREATE TABLE friend(
+friendid int primary key auto_increment
+friendname varchrar(30) not null,
+friendmail varchar(30)not null,
+friendmobile int not null unique,
+bestfriend tinyint,
+user int references user(userid)
+)
